@@ -1,0 +1,86 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+body{
+    width:1580px;
+    height: 1960px;
+    background-image: url(../img/BackGround.png) ;
+    background-size: 100% auto;
+    background-color: rgba(76,131,234,1);
+    background-position:bottom;
+    background-repeat:no-repeat;
+}
+#main{
+    width:1580px;
+    height: 1960px;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);/*这里的50%指自身的50%*/
+}
+#head{
+    margin-top: 70px;
+    width:100%;
+    height:150px;
+
+    background-size: cover;
+    background-image: url(../img/head-background.png);
+}
+#logo{
+    width:150px;
+    height: 150px;
+    background-color: yellow;
+}
+#nav{
+    width:100%;
+    height:30px;
+}
+#nav li{
+    list-style: none;
+    height:100%;
+    border:1px #bbb solid;
+    border-top:none;
+    text-align:center;
+    cursor:pointer;
+    float:left;
+    line-height:30px;
+    background-color:#fff;
+}
+#nav li:hover{
+    background-color: #5bc0de;
+    color: cornsilk;
+}
+.pull-down-executor{
+    display:none;
+    color: black;
+}
+.pull-down-executor li:hover{
+    background-color:#5bc0de;
+    color: cornsilk;
+}
+.pull-down:hover .pull-down-executor{
+    display:block;
+}
+
+#content{
+    width:1000px;
+    height:618px;
+    border:3px rgba(76,131,234,1) solid;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);/*这里的50%指自身的50%*/
+    background-color: rgba(255,255,255,0.6);
+
+    margin-top: 130px;
+}
+
+#footer{
+    width:100%;
+    height: 180px;
+    margin: auto;
+    position:absolute;
+    bottom: 0px;
+    background-color: rgba(255,255,255,0.5);
+}
