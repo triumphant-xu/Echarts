@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/canger.css">
+    <title>苍耳统计主页</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="head"><div id="logo">LOGO</div></div>
+        <ul id="nav">
+            <li class="pull-down">
+                <a >访问次数统计</a>
+                <ul class="pull-down-executor" style="height:auto ;">
+                    <li onclick="dayVisit()">近一周</li>
+                    <li onclick="monthVisit()">近一月</li>
+                    <li  onclick="yearVisit()">近一年</li>
+                    <li onclick="hourVisit()">各时刻平均访问次数</li>
+                </ul>
+            </li>
+            <li class="pull-down">
+                <a >用户特性统计</a>
+                <ul class="pull-down-executor" style="height:auto ;">
+                    <li  onclick="UserDistribution()">地区分布</li>
+                    <li onclick="osStatistics()">操作系统</li>
+                    <li onclick="activityLevel()">周活跃度分析</li>
+                </ul>
+            </li>
+            <li ><a>各类目点击量统计</a></li>
+            <li ><a>用户活跃度分析</a></li>
+            <li ><a>用户访问时长统计</a></li>
+            <li ><a>可视化热度图</a></li>
+        </ul> 
+        <div id="content">
+              如表
+             <div id="form" >
+
+              </div>
+
+        </div>  
+        <div id="footer">
+            <a  style="text-align: center ;display: block" >如果您对我们的产品有兴趣，请联系我们  QQ：736966314</a>
+        </div>
+
+        <script   type="text/javascript" src="js/jqueryOLD.js"></script>
+        <script   type="text/javascript" src="js/echarts.js"></script>
+        <script   type="text/javascript" src="js/canger.js"></script>
+        <script   type="text/javascript" src="echarts-master/map/js/china.js"></script>
+        <script>
+            $(function(){
+                    $('#nav>li').width($('#nav').width()/$('#nav>li').size()-2);  //导航自动设置宽度
+                    $('.pull-down>.pull-down-executor li').width( $('#nav>li').width());  //下拉框宽度自动适应导航条目
+                    $('.pull-down>.pull-down-executor').css('padding-top',$('#nav').height()-$('#nav>.pull-down>a').height()-9);//下拉框上边距
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
